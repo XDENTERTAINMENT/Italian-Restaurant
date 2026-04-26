@@ -1,15 +1,41 @@
 header {
-  background-color: #8a5a3b;
+  background-color: #4a2e1e;
   display: flex;
   justify-content: space-between;
   padding: 35px;
   font-size: 25px;
   color: white;
+
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-body{
-    background-color: #f3e5cf;
-    color: #4a2e1e;
+body {
+  background-color: #f3e5cf;
+  color: #4a2e1e;
+  text-align: center;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 nav {
@@ -22,17 +48,225 @@ a {
   color: white;
 }
 
+section {
+  margin-top: 50px;
+  margin: 20px;
+}
+
+.menu-hero {
+  margin-top: 10px;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  position: relative;
+  height: 50vh;
+}
+.image-menu {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 40px;
+  color: white;
+}
+.menu-hero img {
+  border-radius: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.content-container {
+  display: flex;
+  gap: 10%;
+  justify-content: space-around;
+}
+
+.video-container {
+  display: grid;
+  width: 30%;
+  align-items: center;
+  align-content: space-around;
+}
+.video-container video {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 30px;
+}
+.menu-container {
+  display: grid;
+  align-content: center;
+  width: 50%;
+}
+.menu-appetizer-appetizer {
+  color: white;
+  background-color: #4a2e1e;
+  height: 100vh;
+}
+
+.menu-courses-main {
+  background-color: #4a2e1e;
+  color: white;
+  height: 60vh;
+}
+
+.menu-desserts-dessert {
+  background-color: #4a2e1e;
+  color: white;
+  height: 100vh;
+}
+
+.menu-drinks-drink {
+  background-color: #4a2e1e;
+  color: white;
+  height: 60vh;
+}
+.note {
+  height: 20vh;
+}
+
+.note p {
+  font-size: 30px;
+}
+
+.menu-category {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.menu-item {
+  width: 95%;
+
+  height: 100%;
+  font-size: 10px;
+  margin: 10px;
+}
+
+.menu-item div {
+  width: 100%;
+  height: 30vh;
+}
+
+.menu-item div img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
 footer {
-  background-color: #8b5e3c;
+  background-color: #4a2e1e;
   color: white;
   padding: 15px;
   font-size: 20px;
   text-align: center;
-  
 }
 /* phone  */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  section {
+    margin: 0px;
+    margin-top: 30px;
+  }
+  h3,
+  p {
+    font-size: 18px;
+    margin: 4px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+  }
+
+  nav {
+    display: grid;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+  .menu-hero {
+    margin: 0px;
+    margin-top: 20px;
+    height: 25vh;
+  }
+
+  .video-container {
+    display: none;
+  }
+
+  .content-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    height: 100%;
+  }
+
+  .menu-container {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-item {
+    width: 90%;
+
+    height: 90%;
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  .menu-item div {
+    height: 40%;
+  }
+
+  .menu-item div img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .menu-drinks-drink {
+    height: 100vh;
+  }
+
+  .menu-courses-main {
+    height: 100vh;
+  }
+
+  .menu-appetizer-appetizer {
+    height: 140vh;
+  }
+  .menu-item {
+    width: 90%;
+    margin-top: 0%;
+    height: 35vh;
+    font-size: 10px;
+  }
 }
 /* tablet  */
 

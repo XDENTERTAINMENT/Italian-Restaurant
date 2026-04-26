@@ -1,14 +1,29 @@
 header {
-  background-color: #8a5a3b;
+  background-color: #4a2e1e;
   display: flex;
   justify-content: space-between;
   padding: 35px;
   font-size: 25px;
   color: white;
+
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 body {
   background-color: #f3e5cf;
   color: #4a2e1e;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.hours ul li {
+  font-size: 20px;
 }
 
 nav {
@@ -21,18 +36,28 @@ a {
   color: white;
 }
 
+h2 {
+  font-size: 70px;
+}
+p {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+
 /* hero */
 
-.hero {
+.hero2 {
   margin-top: 10px;
   display: flex;
   margin: 20px;
   align-items: center;
   position: relative;
-  height: 70vh;
+  height: 50vh;
 }
 
-.hero img {
+.hero2 img {
   border-radius: 30px;
   position: absolute;
   width: 100%;
@@ -100,21 +125,104 @@ a {
 .action-button a {
   padding: 10px;
   border-radius: 40px;
-  background-color: #8a5a3b;
+  background-color: #4a2e1e;
+  font-size: 20px;
 }
 footer {
-  background-color: #8b5e3c;
+  background-color: #4a2e1e;
   color: white;
-  padding: 15px;
-  font-size: 20px;
+  padding: 10px;
+
   text-align: center;
 }
-/* phone  */
 
-@media (max-width: 600px) {
+footer p {
+  font-size: 20px;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+  }
+
+  nav {
+    display: grid;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+  .hero2 {
+    margin: 0px;
+    margin-top: 20px;
+    height: 25vh;
+  }
+  .hero2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content h2,
+  p {
+    font-size: 20px;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .dish {
+    width: 100%;
+    height: 33vh;
+  }
+
+  .cta {
+    margin-top: 50px;
+    display: grid;
+    height: 50vh;
+  }
+
+  .dish img {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
 }
 
 /* tablet  */
 
 @media (max-width: 1024px) {
+  .hero {
+    margin-top: 10px;
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+  }
+  .hero img {
+    border-radius: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+  }
 }
