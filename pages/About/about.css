@@ -157,7 +157,7 @@ section {
 .chef img {
   border-radius: 30px;
   width: 600px;
-  height: 450px;
+  height: 100%;
   object-fit: cover;
 }
 
