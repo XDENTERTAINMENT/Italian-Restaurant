@@ -157,6 +157,14 @@ nav a:hover {
   font-size: 40px;
   color: white;
 }
+
+.icon{
+  width: 24px;
+ 
+}
+.icon2{
+  width: 50px;
+}
 /* phone  */
 
 @media (max-width: 768px) {
@@ -223,6 +231,9 @@ nav a:hover {
 .contact-form textarea {
   width: 80%;
 
+}
+.icon2{
+  width: 30px;
 }
 }
 

@@ -176,6 +176,10 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+
+.icon2{
+  width: 50px;
+}
 /* phone  */
 
 @media (max-width: 768px) {
@@ -266,6 +270,9 @@ footer {
     margin-top: 0%;
     height: 35vh;
     font-size: 10px;
+  }
+  .icon2{
+    width: 30px;
   }
 }
 /* tablet  */

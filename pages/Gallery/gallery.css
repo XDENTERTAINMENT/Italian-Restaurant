@@ -138,6 +138,9 @@ nav a:hover {
   font-size: 40px;
   color: white;
 }
+.icon2{
+  width: 50px;
+}
 
 /* tablet  */
 @media (max-width: 1024px) {
@@ -169,5 +172,8 @@ nav a:hover {
     margin: 0px;
     margin-top: 20px;
     height: 25vh;
+  }
+  .icon2{
+    width: 30px;
   }
 }

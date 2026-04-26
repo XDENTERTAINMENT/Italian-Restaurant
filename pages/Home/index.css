@@ -148,6 +148,12 @@ nav a.active {
 nav a:hover {
   border-bottom: 2px solid white;
 }
+.icon{
+  width: 24px;
+}
+.icon2{
+  width: 50px;
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -203,6 +209,9 @@ nav a:hover {
   footer {
     margin-top: 60px;
   }
+  .icon2{
+  width: 30px;
+}
 }
 
 /* tablet  */
