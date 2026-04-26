@@ -91,9 +91,7 @@ section {
   color: #4a2e1e;
 }
 
-.gallery {
-  height: 70vh;
-}
+
 
 .images {
   display: grid;
@@ -132,7 +130,7 @@ section {
   margin: 20px;
 }
 
-.bio img {
+.marcos div img {
   border-radius: 30px;
   width: 600px;
   height: 100%;
@@ -154,7 +152,7 @@ section {
   margin: 20px;
 }
 
-.chef img {
+.Award div img {
   border-radius: 30px;
   width: 600px;
   height: 100%;
