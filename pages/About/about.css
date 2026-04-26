@@ -204,7 +204,7 @@ nav a:hover {
 
   .marcos div {
     height: 40vh;
-    width: 87%;
+    width: 89%;
   }
 
   .marcos div img {
@@ -231,10 +231,11 @@ nav a:hover {
     display: grid;
     margin-top: 30px;
     height: 80vh;
+    width: 100%;
   }
 
   .Award div {
-    width: 87%;
+    width: 89%;
     height: 40vh;
   }
 
