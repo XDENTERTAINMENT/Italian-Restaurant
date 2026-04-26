@@ -208,6 +208,7 @@ nav a:hover {
   }
 
   .map {
+    margin: 30px auto 30px auto;
     height: 25vh;
     width: 80%;
   }
@@ -217,10 +218,7 @@ nav a:hover {
     width: 100%;
   }
 
-  footer {
-    margin-top: 20px;
-  }
-
+  
   .contact-form input,
 .contact-form textarea {
   width: 80%;
