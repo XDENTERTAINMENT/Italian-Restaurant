@@ -144,6 +144,20 @@ nav a:hover {
 
 /* tablet  */
 @media (max-width: 1024px) {
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+  }
+
+  nav {
+    display: grid;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
